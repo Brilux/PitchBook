@@ -125,8 +125,15 @@
 .trial-inscription span {
   color: #ff8b38;
 }
-.get-started_button-container {
+.get-started_button {
   background-color: #ff8b38;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 21px;
+  text-align: center;
+  font-family: "Open Sans - Semibold", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
 }
 .get-started_inscription {
   color: #ffffff;
@@ -237,9 +244,6 @@
   }
   .trial-input {
     width: 285px;
-  }
-  .get-started_button-container {
-    margin-top: 20px;
   }
 }
 @media screen and (min-width: 1224px) {

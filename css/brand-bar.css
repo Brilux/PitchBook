@@ -22,6 +22,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 10px;
 }
 .brand-image {
   margin: 10px;
@@ -52,7 +53,6 @@
     max-width: 360px;
   }
   .brand-image-container {
-    display: block;
     margin-top: 30px;
   }
 }
@@ -61,7 +61,6 @@
     justify-content: space-between;
   }
   .brand-image-container {
-    margin-left: 87px;
     margin-right: 155px;
   }
   .brand-section_title {
