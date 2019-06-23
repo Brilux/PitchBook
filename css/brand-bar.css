@@ -4,6 +4,7 @@
 }
 .brand-section_title {
   margin: 15px auto;
+  margin-bottom: initial;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -40,7 +41,6 @@
   }
   .brand-section_title {
     text-align: left;
-    margin: 15px;
     margin-left: 60px;
   }
   .brand-section_note {
@@ -53,7 +53,7 @@
     max-width: 360px;
   }
   .brand-image-container {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 @media screen and (min-width: 1224px) {
