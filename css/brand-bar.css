@@ -24,6 +24,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.38);
 }
 .brand-image {
   margin: 10px;
@@ -32,12 +33,13 @@
   .brand-container {
     display: flex;
     flex-direction: row;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
   .brand-info-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .brand-section_title {
     text-align: left;

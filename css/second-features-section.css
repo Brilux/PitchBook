@@ -17,7 +17,7 @@
 .second-features_title:after {
   content: "";
   display: block;
-  width: 74px;
+  width: 64px;
   height: 2px;
   background-color: #ff8b38;
   margin: 0 auto;
@@ -37,6 +37,7 @@
 .list-items-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 .item-container {
   display: flex;
@@ -70,9 +71,14 @@
   .second-features-container {
     flex-direction: row;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .second-features-information-container {
     margin-left: 10px;
+  }
+  .second-features-image {
+    padding-top: initial;
   }
   .second-features_title {
     text-align: left;
@@ -94,6 +100,8 @@
 @media screen and (min-width: 992px) {
   .second-features-container {
     justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .second-features-image {
     width: initial;
@@ -110,6 +118,10 @@
   }
 }
 @media screen and (min-width: 1224px) {
+  .second-features-container {
+    padding-top: 107px;
+    padding-bottom: 133px;
+  }
   .second-features-image {
     margin-left: 149px;
   }
