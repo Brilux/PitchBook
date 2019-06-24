@@ -52,8 +52,12 @@
   .brand-section_note {
     max-width: 360px;
   }
+  .brand-container {
+    justify-content: space-between;
+  }
   .brand-image-container {
     margin-top: 15px;
+    margin-right: 100px;
   }
 }
 @media screen and (min-width: 1224px) {
@@ -61,7 +65,7 @@
     justify-content: space-between;
   }
   .brand-image-container {
-    margin-right: 155px;
+    margin-right: 100px;
   }
   .brand-section_title {
     margin-left: 149px;
@@ -71,5 +75,10 @@
   }
   .brand-image {
     margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .brand-image-container {
+    margin-right: 155px;
   }
 }

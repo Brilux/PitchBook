@@ -1,0 +1,147 @@
+.second-features-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.second-features-image {
+  width: 300px;
+  padding-top: 30px;
+}
+
+.second-features_title {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 43px;
+  text-align: center;
+}
+
+.second-features_title:after {
+  content: "";
+  display: block;
+  width: 74px;
+  height: 2px;
+  background-color: #ff8b38;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.second-features_note {
+  text-align: center;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 10px;
+  max-width: 500px;
+}
+
+.list-items-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item_image {
+  margin: 10px;
+}
+
+.item-information {
+  margin: 10px;
+}
+
+.list-item_title {
+  font-family: "Open Sans - Semibold", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin: initial;
+}
+
+.list-item_note {
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  max-width: 363px;
+  margin: initial;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .second-features-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .second-features-information-container {
+    margin-left: 10px;
+  }
+
+  .second-features_title {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .second-features_title:after {
+    margin: initial;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .second-features_note {
+    text-align: left;
+    max-width: 413px;
+  }
+
+  .item-container {
+    justify-content: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .second-features-container {
+    justify-content: space-between;
+  }
+
+  .second-features-image {
+    width: initial;
+    margin-left: 60px;
+  }
+
+  .second-features-information-container {
+    margin-left: initial;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .second-features-information-container {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .second-features-image {
+    margin-left: 149px;
+  }
+
+  .second-features-information-container {
+    margin-right: 171px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .second-features-container {
+    justify-content: space-around;
+  }
+}
