@@ -117,7 +117,7 @@
     margin-right: 171px;
   }
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1600px) {
   .second-features-container {
     justify-content: space-around;
   }
