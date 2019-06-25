@@ -112,6 +112,10 @@
     margin-left: initial;
     margin-right: 20px;
   }
+  .second-features_title:after {
+    margin-top: 29px;
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1100px) {
   .second-features-information-container {

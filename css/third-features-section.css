@@ -61,6 +61,10 @@
   .third-features-information-container {
     margin-left: 50px;
   }
+  .third-features_title:after {
+    margin-top: 29px;
+    margin-bottom: 30px;
+  }
   .third-features_note {
     max-width: 473px;
   }
