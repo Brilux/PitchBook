@@ -1,0 +1,125 @@
+.contact-us-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-title {
+  font-family: Raleway-Regular, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact-us-title:after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 2px;
+  background-color: #ff8b38;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.contact-us-note {
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin: 10px 10px 80px;
+}
+
+.contact-us-input-information-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-inputs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-input-label {
+  margin: 10px;
+}
+
+.contact-us-input {
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  opacity: 0.69;
+  outline: none;
+  min-width: 270px;
+  height: 28px;
+}
+
+.contact-us-textarea {
+  margin-top: 7px;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  opacity: 0.69;
+  outline: none;
+}
+
+.send-message-button {
+  color: #ffffff;
+  background-color: #ff8b38;
+  outline: none;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 5px;
+  font-family: "Open Sans - Semibold", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 58px auto 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us-title {
+    margin-top: 108px;
+  }
+
+  .contact-us-input-information-container {
+    flex-direction: row;
+  }
+
+  .contact-us-input {
+    min-width: 350px;
+    margin-right: 20px;
+  }
+
+  .contact-us-textarea {
+    min-width: 350px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-us-input {
+    min-width: 400px;
+    margin-right: 40px;
+  }
+
+  .contact-us-textarea {
+    min-width: 400px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .contact-us-input {
+    min-width: 527px;
+    margin-right: 33px;
+  }
+
+  .contact-us-textarea {
+    min-width: 527px;
+    margin-left: 33px;
+  }
+}
