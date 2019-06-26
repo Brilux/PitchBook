@@ -46,6 +46,10 @@
   margin: 10px auto;
   display: flex;
   justify-content: center;
+  cursor: pointer;
+}
+.menu-element-container:hover {
+  background-color: #ff8b38;
 }
 .menu-element {
   color: #ffffff;
@@ -110,6 +114,10 @@
   font-size: 15px;
   font-weight: 400;
   margin: 0 auto 15px;
+  cursor: pointer;
+}
+.download-button:hover {
+  background-color: #ff8b38;
 }
 .trial-container {
   display: flex;
@@ -138,6 +146,10 @@
   font-family: "Open Sans - Semibold", sans-serif;
   font-size: 15px;
   font-weight: 400;
+  cursor: pointer;
+}
+.get-started_button:hover {
+  background-color: #37495e;
 }
 .get-started_inscription {
   color: #ffffff;
@@ -179,8 +191,11 @@
     align-items: center;
   }
   .menu-element-container {
-    margin-left: 25px;
-    margin-right: 15px;
+    margin: initial;
+    margin-right: 28px;
+    align-items: center;
+    height: 72px;
+    width: 60px;
   }
   .menu-element {
     font-size: 14px;
@@ -229,15 +244,11 @@
   .logo-container {
     margin-right: 130px;
   }
-  .menu {
-    margin-right: 50px;
-  }
   .header-section-container {
     justify-content: space-between;
   }
   .menu-element-container {
-    margin-left: 23px;
-    margin-right: 23px;
+    margin-right: 28px;
   }
   .trial-container {
     width: 360px;
@@ -252,11 +263,10 @@
 }
 @media screen and (min-width: 1224px) {
   .logo {
-    margin: 21px;
     margin-left: 149px;
   }
   .menu {
-    margin-right: 148px;
+    margin-right: 105px;
   }
   .header-section_title {
     margin-top: 203px;

@@ -35,10 +35,18 @@
 .left-arrow {
   transform: rotate(90deg);
   margin-top: 30px;
+  cursor: pointer;
+}
+.left-arrow:hover {
+  filter: invert(70%);
 }
 .right-arrow {
   transform: rotate(90deg);
   margin-top: 30px;
+  cursor: pointer;
+}
+.right-arrow:hover {
+  filter: invert(70%);
 }
 .review {
   width: 273px;

@@ -30,6 +30,11 @@
 .brand-image {
   margin: 10px;
 }
+.brand-image:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 @media screen and (min-width: 768px) {
   .brand-container {
     display: flex;

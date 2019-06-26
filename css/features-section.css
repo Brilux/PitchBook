@@ -19,6 +19,10 @@
   line-height: 20px;
   text-transform: uppercase;
   background-color: #ff8b38;
+  cursor: pointer;
+}
+.features-tab-orange:hover {
+  background-color: #37495e;
 }
 .features-tab {
   padding: 30px;
@@ -30,6 +34,9 @@
   line-height: 20px;
   text-transform: uppercase;
   background-color: #37495e;
+}
+.features-tab:hover {
+  background-color: #ff8b38;
 }
 .features-info-container {
   display: flex;
@@ -71,6 +78,10 @@
   font-size: 15px;
   font-weight: 400;
   margin: 15px auto;
+  cursor: pointer;
+}
+.features-section_download-button:hover {
+  background-color: #37495e;
 }
 @media screen and (min-width: 768px) {
   .features-container {
@@ -155,5 +166,10 @@
   }
   .features-image {
     margin-right: 149px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .features-container {
+    justify-content: space-around;
   }
 }
