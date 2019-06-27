@@ -13,6 +13,7 @@
 .footer-image {
   margin-left: 10px;
   margin-right: 10px;
+  cursor: pointer;
 }
 .footer-image:hover {
   -webkit-transform: scale(1.2);

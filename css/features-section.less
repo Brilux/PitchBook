@@ -44,6 +44,16 @@
   background-color: #ff8b38;
 }
 
+.feature-active-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-unactive-container {
+  display: none;
+}
+
 .features-info-container {
   display: flex;
   flex-direction: column;
@@ -196,6 +206,12 @@
 
   .features-image {
     margin-right: 149px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .features-image {
+    margin-left: 60px;
   }
 }
 

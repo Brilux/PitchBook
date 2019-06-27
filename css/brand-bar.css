@@ -29,6 +29,7 @@
 }
 .brand-image {
   margin: 10px;
+  cursor: pointer;
 }
 .brand-image:hover {
   -webkit-transform: scale(1.2);

@@ -57,6 +57,7 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .menu-element-container:hover {
@@ -77,6 +78,10 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+.submenu {
+  display: none;
 }
 
 .header-info-container {
@@ -224,16 +229,81 @@
     align-items: center;
   }
 
+  .menu {
+    margin-right: 8px;
+  }
+
   .menu-element-container {
     margin: initial;
-    margin-right: 28px;
     align-items: center;
     height: 72px;
-    width: 60px;
   }
 
   .menu-element {
     font-size: 14px;
+    padding: 28px;
+  }
+
+  .menu-container:hover + .submenu {
+    display: flex;
+  }
+
+  .submenu {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 72px;
+    height: 170px;
+    display: none;
+    justify-content: space-around;
+
+    .submenu-preview-container {
+      padding: initial;
+      display: flex;
+
+      .submenu-preview {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+      }
+
+      .submenu-preview-title {
+        color: #86878b;
+        font-size: 14px;
+        font-family: "Open Sans - Semibold", sans-serif;
+        font-weight: 400;
+      }
+
+      .submenu-image {
+        width: 100px;
+      }
+    }
+
+    .submenu-links-container {
+      display: flex;
+    }
+
+    .links {
+      padding: initial;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 20px;
+    }
+
+    .link {
+      cursor: pointer;
+      list-style-type: none;
+      color: #86878b;
+      font-size: 14px;
+      font-family: "Open Sans - Semibold", sans-serif;
+      font-weight: 400;
+      margin-top: 5px;
+    }
+
   }
 
   .header-section-container {
@@ -294,10 +364,6 @@
     justify-content: space-between;
   }
 
-  .menu-element-container {
-    margin-right: 28px;
-  }
-
   .trial-container {
     width: 360px;
     height: 314px;
@@ -318,7 +384,33 @@
   }
 
   .menu {
-    margin-right: 105px;
+    margin-right: 121px;
+  }
+
+  .submenu {
+    justify-content: space-between;
+
+
+    .submenu-preview-container {
+      margin-left: 40px;
+
+
+      .submenu-preview {
+        margin-left: 30px;
+
+        .submenu-image {
+          width: 130px;
+        }
+      }
+    }
+
+    .submenu-links-container {
+      .links {
+        margin-top: 40px;
+        margin-right: 25px;
+        margin-left: 25px;
+      }
+    }
   }
 
   .header-section_title {
