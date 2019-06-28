@@ -361,3 +361,8 @@
     margin-bottom: 140px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .submenu {
+    justify-content: space-around;
+  }
+}
