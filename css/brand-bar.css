@@ -4,8 +4,19 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.38);
   margin-bottom: 2px;
 }
+.brand-content-container {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.brand-info-container {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
 .brand-section_title {
-  margin: 15px auto;
   margin-bottom: initial;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -13,7 +24,7 @@
   font-weight: 700;
 }
 .brand-section_note {
-  margin: 5px;
+  padding-top: 12px;
   text-align: center;
   color: #86878b;
   font-family: "Open Sans", sans-serif;
@@ -25,10 +36,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 10px;
+  align-items: center;
 }
 .brand-image {
-  margin: 10px;
   cursor: pointer;
 }
 .brand-image:hover {
@@ -43,18 +53,25 @@
     padding-top: 22px;
     padding-bottom: 22px;
   }
+  .brand-content-container {
+    width: 1105px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .brand-info-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 10px;
   }
   .brand-section_title {
     text-align: left;
-    margin-left: 60px;
   }
   .brand-section_note {
     text-align: left;
-    margin-left: 60px;
+  }
+  .brand-image {
+    padding-left: 20px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -64,30 +81,15 @@
   .brand-container {
     justify-content: space-between;
   }
-  .brand-image-container {
-    margin-top: 15px;
-    margin-right: 100px;
-  }
 }
 @media screen and (min-width: 1224px) {
   .brand-container {
     justify-content: space-between;
   }
-  .brand-image-container {
-    margin-right: 100px;
-  }
-  .brand-section_title {
-    margin-left: 149px;
-  }
-  .brand-section_note {
-    margin-left: 149px;
+  .brand-content-container {
+    justify-content: space-between;
   }
   .brand-image {
-    margin-right: 20px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .brand-image-container {
-    margin-right: 155px;
+    padding-left: 40px;
   }
 }
