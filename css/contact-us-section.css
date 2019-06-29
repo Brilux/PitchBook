@@ -18,7 +18,8 @@
   height: 2px;
   background-color: #ff8b38;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .contact-us-note {
   color: #86878b;
@@ -27,7 +28,7 @@
   font-weight: 400;
   line-height: 20px;
   text-align: center;
-  margin: 10px 10px 80px;
+  padding: 10px 10px 80px;
 }
 .contact-us-input-information-container {
   display: flex;
@@ -39,7 +40,7 @@
   flex-direction: column;
 }
 .contact-us-input-label {
-  margin: 10px;
+  padding: 10px;
 }
 .contact-us-input {
   border: none;
@@ -50,7 +51,7 @@
   height: 28px;
 }
 .contact-us-textarea {
-  margin-top: 7px;
+  padding-top: 7px;
   border: none;
   border-bottom: 1px solid #d6d6d6;
   opacity: 0.69;
@@ -68,16 +69,13 @@
   font-family: "Open Sans - Semibold", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  margin: 58px auto 80px;
+  margin: 58px auto;
   cursor: pointer;
 }
 .send-message-button:hover {
   background-color: #37495e;
 }
 @media screen and (min-width: 768px) {
-  .contact-us-title {
-    margin-top: 108px;
-  }
   .contact-us-input-information-container {
     flex-direction: row;
   }
@@ -91,6 +89,10 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .contact-us-section {
+    padding-top: 108px;
+    padding-bottom: 80px;
+  }
   .contact-us-input {
     min-width: 400px;
     margin-right: 40px;

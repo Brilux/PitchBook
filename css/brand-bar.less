@@ -10,6 +10,8 @@
   margin: auto;
   justify-content: space-between;
   flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .brand-info-container {
@@ -42,6 +44,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .brand-image {
@@ -66,6 +70,9 @@
     width: 1105px;
     flex-direction: row;
     justify-content: space-around;
+    padding-top: initial;
+    padding-bottom: initial;
+    padding-left: 20px;
   }
 
   .brand-info-container {
@@ -83,12 +90,21 @@
     text-align: left;
   }
 
+  .brand-image-container {
+    padding-left: initial;
+    padding-right: initial;
+  }
+
   .brand-image {
     padding-left: 20px;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .brand-content-container {
+    padding-left: initial;
+  }
+
   .brand-section_note {
     max-width: 360px;
   }

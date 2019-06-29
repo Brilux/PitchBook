@@ -4,9 +4,16 @@
   flex-direction: column;
 }
 
+.second-features-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .second-features-image {
   width: 300px;
-  padding-top: 30px;
+  margin-top: 30px;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.60);
 }
 
 .second-features_title {
@@ -35,7 +42,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  margin: 10px;
+  padding: 10px;
   max-width: 500px;
 }
 
@@ -53,11 +60,11 @@
 }
 
 .list-item_image {
-  margin: 10px;
+  padding: 10px;
 }
 
 .item-information {
-  margin: 10px;
+  padding: 10px;
 }
 
 .list-item_title {
@@ -76,7 +83,7 @@
   line-height: 20px;
   max-width: 363px;
   margin: initial;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -87,17 +94,24 @@
     padding-bottom: 20px;
   }
 
+  .second-features-content-container {
+    flex-direction: row;
+    width: 1105px;
+    margin: auto;
+    justify-content: space-around;
+  }
+
   .second-features-information-container {
     margin-left: 10px;
   }
 
   .second-features-image {
-    padding-top: initial;
+    margin-top: initial;
   }
 
   .second-features_title {
     text-align: left;
-    margin-left: 10px;
+    padding-left: 10px;
   }
 
   .second-features_title:after {
@@ -109,6 +123,10 @@
   .second-features_note {
     text-align: left;
     max-width: 413px;
+  }
+
+  .list-items-container {
+    padding-bottom: initial;
   }
 
   .item-container {
@@ -125,23 +143,10 @@
 
   .second-features-image {
     width: initial;
-    margin-left: 60px;
   }
 
   .second-features-information-container {
     margin-left: initial;
-    margin-right: 20px;
-  }
-
-  .second-features_title:after {
-    margin-top: 29px;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .second-features-information-container {
-    margin-right: 70px;
   }
 }
 
@@ -151,12 +156,8 @@
     padding-bottom: 133px;
   }
 
-  .second-features-image {
-    margin-left: 149px;
-  }
-
-  .second-features-information-container {
-    margin-right: 171px;
+  .second-features-content-container {
+    justify-content: space-between;
   }
 }
 

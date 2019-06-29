@@ -1,4 +1,5 @@
 .testimonial-container {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -18,7 +19,8 @@
   height: 2px;
   background-color: #ff8b38;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .testimonial-note {
@@ -28,7 +30,7 @@
   font-weight: 400;
   line-height: 20px;
   text-align: center;
-  margin: 10px;
+  padding: 10px;
 }
 
 .reviews-container {
@@ -62,8 +64,8 @@
   position: relative;
 
   .review-text {
-    margin-left: 12px;
-    margin-right: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     color: #86878b;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -84,7 +86,7 @@
 .reviewer-container {
   display: flex;
   align-items: center;
-  margin-top: 25px;
+  padding-top: 25px;
 
   .reviewer-image {
     border-radius: 50%;
@@ -95,7 +97,7 @@
   .reviewer-name-container {
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
+    padding-left: 15px;
   }
 
   .reviewer-name {
@@ -114,11 +116,13 @@
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .testimonial-container {
     padding-top: 108px;
     padding-bottom: 101px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
   }
 
   .reviews-container {
@@ -128,9 +132,8 @@
 
   .left-arrow {
     display: block;
-    transform: rotate(90deg);
-    margin-top: 30px;
     cursor: pointer;
+    margin-bottom: 50px;
   }
 
   .left-arrow:hover {
@@ -139,9 +142,8 @@
 
   .right-arrow {
     display: block;
-    transform: rotate(90deg);
-    margin-top: 30px;
     cursor: pointer;
+    margin-bottom: 50px;
   }
 
   .right-arrow:hover {
@@ -160,22 +162,6 @@
   .review {
     width: 200px;
   }
-
-  .review:after {
-    //margin-left: -65px;
-  }
-
-  .left-arrow {
-    transform: initial;
-    margin-bottom: 60px;
-    margin-left: 10px;
-  }
-
-  .right-arrow {
-    transform: initial;
-    margin-bottom: 60px;
-    margin-right: 10px;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -188,32 +174,22 @@
     width: 273px;
   }
 
-  .review:after {
-    //margin-left: -100px;
-  }
 }
 
 @media screen and (min-width: 1224px) {
+  .testimonial-content-container {
+    flex-direction: row;
+    width: 1105px;
+    margin: auto;
+    justify-content: space-between;
+  }
+
   .reviews-container {
     justify-content: space-between;
   }
 
   .review-elements {
     min-width: 1059px;
-    justify-content: space-around;
-  }
-
-  .left-arrow {
-    margin-left: 102px;
-  }
-
-  .right-arrow {
-    margin-right: 106px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .reviews-container {
     justify-content: space-around;
   }
 }

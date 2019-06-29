@@ -4,6 +4,10 @@
   flex-direction: column;
   align-items: center;
 }
+.features-content-container {
+  display: flex;
+  flex-direction: column;
+}
 .tabs-container {
   padding-top: 30px;
   display: flex;
@@ -62,10 +66,12 @@
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
+  padding-top: 30px;
 }
 .features-section_note {
   text-align: center;
-  margin: 10px;
+  padding: 10px;
+  padding-top: 20px;
   color: #86878b;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -98,6 +104,12 @@
     padding-top: 10px;
     padding-bottom: 40px;
   }
+  .features-content-container {
+    flex-direction: row;
+    width: 1105px;
+    margin: auto;
+    justify-content: space-around;
+  }
   .tabs-container {
     flex-direction: column;
     margin: 10px;
@@ -124,22 +136,27 @@
   .features-info-container {
     display: flex;
     flex-direction: row;
+    min-height: 372px;
+  }
+  .features-title-container {
+    min-height: 372px;
+    justify-content: space-between;
   }
   .features-image {
     width: initial;
   }
   .features-section_title {
     text-align: left;
-    margin-left: 10px;
+    padding-left: 10px;
     padding-top: 30px;
   }
   .features-section_note {
     text-align: left;
+    padding-top: initial;
   }
   .features-section_download-button {
     width: 66px;
     margin: initial;
-    margin-top: 7px;
     margin-left: 7px;
   }
 }
@@ -148,43 +165,25 @@
     justify-content: space-between;
   }
   .tabs-container {
-    margin-left: 60px;
-  }
-  .features-section_title {
-    padding-top: initial;
-    margin-bottom: 55px;
+    margin: initial;
   }
   .features-section_note {
     max-width: 476px;
-  }
-  .features-section_download-button {
-    margin-top: 35px;
-  }
-  .features-image {
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 @media screen and (min-width: 1224px) {
   .features-container {
     justify-content: space-between;
-    padding-top: 147px;
+    padding-top: 117px;
     padding-bottom: 114px;
   }
-  .tabs-container {
-    margin-left: 149px;
+  .features-content-container {
+    justify-content: space-between;
+  }
+  .features-section_download-button {
+    margin-bottom: 24px;
   }
   .features-image {
-    margin-right: 149px;
-  }
-}
-@media screen and (min-width: 1350px) {
-  .features-image {
-    margin-left: 60px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .features-container {
-    justify-content: space-around;
+    padding-left: 103px;
   }
 }
