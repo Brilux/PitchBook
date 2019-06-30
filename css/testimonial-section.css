@@ -34,6 +34,11 @@
   flex-direction: column;
   align-items: center;
 }
+.reviews-container-test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .left-arrow {
   display: none;
 }
@@ -112,6 +117,10 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  .reviews-container-test {
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .left-arrow {
     display: block;
     cursor: pointer;
@@ -135,6 +144,69 @@
     margin-right: 10px;
     margin-left: 10px;
   }
+  .element.left {
+    margin-right: 10px;
+    margin-left: 10px;
+    animation-duration: 1.5s;
+  }
+  .element.middle {
+    margin-right: 10px;
+    margin-left: 10px;
+    animation-duration: 1.5s;
+  }
+  .element.right {
+    margin-right: 10px;
+    margin-left: 10px;
+    animation-duration: 1.5s;
+  }
+  @keyframes leftElementToRight {
+    from {
+      transform: translate(-200%);
+    }
+    to {
+      transform: translate(0%);
+    }
+  }
+  @keyframes middleElementToRight {
+    from {
+      transform: translate(100%);
+    }
+    to {
+      transform: translate(0%);
+    }
+  }
+  @keyframes rightElementToRight {
+    from {
+      transform: translate(100%);
+    }
+    to {
+      transform: translate(0%);
+    }
+  }
+  @keyframes leftElementToLeft {
+    from {
+      transform: translate(-100%);
+    }
+    to {
+      transform: translate(0%);
+    }
+  }
+  @keyframes middleElementToLeft {
+    from {
+      transform: translate(-100%);
+    }
+    to {
+      transform: translate(0%);
+    }
+  }
+  @keyframes rightElementToLeft {
+    from {
+      transform: translate(200%);
+    }
+    to {
+      transform: translate(0%);
+    }
+  }
   .review {
     width: 200px;
   }
@@ -156,6 +228,9 @@
     justify-content: space-between;
   }
   .reviews-container {
+    justify-content: space-between;
+  }
+  .reviews-container-test {
     justify-content: space-between;
   }
   .review-elements {

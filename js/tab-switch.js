@@ -6,38 +6,38 @@ const firstFeatureTab = document.getElementById('firstFeatureTab');
 const secondFeatureTab = document.getElementById('secondFeatureTab');
 const thirdFeatureTab = document.getElementById('thirdFeatureTab');
 
-function resetFirstTab() {
+let resetFirstTab = () => {
   firstTab.className = 'features-tab';
   firstFeatureTab.className = 'feature-unactive-container';
-}
+};
 
-function resetSecondTab() {
+let resetSecondTab = () => {
   secondTab.className = 'features-tab';
   secondFeatureTab.className = 'feature-unactive-container';
-}
+};
 
-function resetThirdTab() {
+let resetThirdTab = () => {
   thirdTab.className = 'features-tab';
   thirdFeatureTab.className = 'feature-unactive-container';
-}
+};
 
-function switchFirstTab() {
+let switchFirstTab = () => {
   resetSecondTab();
   resetThirdTab();
   firstTab.className = 'features-tab-orange';
   firstFeatureTab.className = 'feature-active-container';
-}
+};
 
-function switchSecondTab() {
+let switchSecondTab = ()  => {
   resetFirstTab();
   resetThirdTab();
   secondTab.className = 'features-tab-orange';
   secondFeatureTab.className = 'feature-active-container';
-}
+};
 
-function switchThirdTab() {
+let switchThirdTab = () => {
   resetFirstTab();
   resetSecondTab();
   thirdTab.className = 'features-tab-orange';
   thirdFeatureTab.className = 'feature-active-container';
-}
+};
