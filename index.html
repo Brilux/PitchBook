@@ -4,92 +4,571 @@
   <meta charset="UTF-8">
   <title>PitchBook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
   <link rel="stylesheet" type="text/css" href="css/brand-bar.css">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/features-section.css">
+  <link rel="stylesheet" type="text/css" href="css/second-features-section.css">
+  <link rel="stylesheet" type="text/css" href="css/third-features-section.css">
+  <link rel="stylesheet" type="text/css" href="css/process-section.css">
+  <link rel="stylesheet" type="text/css" href="css/pricing-section.css">
+  <link rel="stylesheet" type="text/css" href="css/testimonial-section.css">
+  <link rel="stylesheet" type="text/css" href="css/axure-design-section.css">
+  <link rel="stylesheet" type="text/css" href="css/contact-us-section.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
-<section class="header-container">
-
+<section class="header-container" id="header-container">
   <div class="nav-container">
-    <a class="logo-container" href="index.html">
-      <img class="logo" src="img/logo.png" alt="PitchBook">
-    </a>
+    <div class="nav-content-container">
+      <a class="logo-container" href="index.html">
+        <img class="logo" src="img/logo.png" alt="PitchBook">
+      </a>
 
-    <nav class="menu-container">
-      <ul class="menu" id="adaptive-menu">
-        <li class="menu-element-container"><a class="menu-element" href="#">Features</a></li>
-        <li class="menu-element-container"><a class="menu-element" href="#">About</a></li>
-        <li class="menu-element-container"><a class="menu-element" href="#">Pricing</a></li>
-        <li class="menu-element-container"><a class="menu-element" href="#">Reviews</a></li>
-        <li class="menu-element-container"><a class="menu-element" href="#">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="menu-container">
+        <ul class="menu" id="adaptive-menu">
+          <li class="menu-element-container"><a class="menu-element" href="#features-container">Features</a></li>
+          <li class="menu-element-container"><a class="menu-element" href="#process-container">About</a></li>
+          <li class="menu-element-container"><a class="menu-element" href="#pricing-container">Pricing</a></li>
+          <li class="menu-element-container"><a class="menu-element" href="#testimonial-container">Reviews</a></li>
+          <li class="menu-element-container"><a class="menu-element" href="#contact-us-section">Contact</a></li>
+        </ul>
+      </nav>
 
-    <a class="toggle-button" onclick="toggle()">
-      <div class="toggle-line"></div>
-      <div class="toggle-line"></div>
-      <div class="toggle-line"></div>
-    </a>
+      <div class="submenu">
+        <ul class="submenu-preview-container">
+          <li class="submenu-preview">
+            <p class="submenu-preview-title">About us</p>
+            <img class="submenu-image" src="img/second-features.jpg" alt="features">
+          </li>
+          <li class="submenu-preview">
+            <p class="submenu-preview-title">Our partners</p>
+            <img class="submenu-image" src="img/second-features.jpg" alt="features">
+          </li>
+          <li class="submenu-preview">
+            <p class="submenu-preview-title">Careers</p>
+            <img class="submenu-image" src="img/second-features.jpg" alt="features">
+          </li>
+          <li class="submenu-preview">
+            <p class="submenu-preview-title">Contact us</p>
+            <img class="submenu-image" src="img/second-features.jpg" alt="features">
+          </li>
+        </ul>
+
+        <div class="submenu-links-container">
+          <ul class="links">
+            <li class="link">Product</li>
+            <li class="link">API and Datafeed</li>
+            <li class="link">Platform</li>
+            <li class="link">Mobile</li>
+          </ul>
+          <ul class="links">
+            <li class="link">News & Analysis</li>
+            <li class="link">Reports</li>
+            <li class="link">Videos</li>
+            <li class="link">Subscribe to N&A</li>
+          </ul>
+          <ul class="links">
+            <li class="link">News & Analysis</li>
+            <li class="link">Reports</li>
+            <li class="link">Videos</li>
+            <li class="link">Subscribe to N&A</li>
+          </ul>
+          <ul class="links">
+            <li class="link">News & Analysis</li>
+            <li class="link">Reports</li>
+            <li class="link">Videos</li>
+            <li class="link">Subscribe to N&A</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="toggle-button" onclick="toggle()">
+        <div class="toggle-line"></div>
+        <div class="toggle-line"></div>
+        <div class="toggle-line"></div>
+      </a>
+    </div>
   </div>
 
   <header class="header-section-container">
-    <div class="header-info-container">
-      <h2 class="header-section_title">Modern axure template for beautiful prototypes</h2>
-      <p class="header-section_title_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-        euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-        accumsan et viverra justo commodo.</p>
+    <div class="header-content-container">
+      <div class="header-info-container">
+        <h2 class="header-section_title">Modern axure template for beautiful prototypes</h2>
+        <p class="header-section_title_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+          accumsan et viverra justo commodo.</p>
 
-      <a class="download-button">
-        Download
-      </a>
-    </div>
-
-
-    <div class="trial-container">
-      <div class="trial_title_background">
-        <p class="trial-inscription">Try Your <span>FREE</span> Trial Today</p>
+        <div class="download-button-container">
+          <a class="download-button">
+            Download
+          </a>
+        </div>
       </div>
 
-      <label class="trial-input-label">
-        <input class="trial-input" type="text" placeholder="Name">
-      </label>
+      <div class="trial-container">
+        <div class="trial_title_background">
+          <p class="trial-inscription">Try Your <span>FREE</span> Trial Today</p>
+        </div>
 
-      <label class="trial-input-label">
-        <input class="trial-input" type="text" placeholder="Email">
-      </label>
+        <label class="trial-input-label">
+          <input class="trial-input" type="text" placeholder="Name">
+        </label>
 
-      <label class="trial-input-label">
-        <input class="trial-input" type="text" placeholder="Password">
-      </label>
+        <label class="trial-input-label">
+          <input class="trial-input" type="text" placeholder="Email">
+        </label>
 
-      <a class="get-started_button-container">
-        <p class="get-started_inscription">
+        <label class="trial-input-label">
+          <input class="trial-input" type="text" placeholder="Password">
+        </label>
+
+        <a class="get-started_button">
           Get Started
-        </p>
-      </a>
+        </a>
+      </div>
     </div>
   </header>
 </section>
 
-<section class="brand-container">
-  <div class="brand-info-container">
-    <h2 class="brand-section_title">Social Media</h2>
-    <p class="brand-section_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Aenean euismod bibendum laoreet.</p>
-  </div>
+<section class="brand-container" id="brand-container">
+  <div class="brand-content-container">
+    <div class="brand-info-container">
+      <h2 class="brand-section_title">Social Media</h2>
+      <p class="brand-section_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Aenean euismod bibendum laoreet.</p>
+    </div>
 
-  <div class="brand-image-container">
-    <img class="brand-image" src="img/facebook.jpg" alt="facebook">
-    <img class="brand-image" src="img/twitter.jpg" alt="twitter">
-    <img class="brand-image" src="img/google-plus.jpg" alt="google-plus">
-    <img class="brand-image" src="img/pinterest.jpg" alt="pinterest">
-    <img class="brand-image" src="img/instagram.jpg" alt="instagram">
-    <img class="brand-image" src="img/stumbleupon.jpg" alt="stumbleupon">
-    <img class="brand-image" src="img/wifi.jpg" alt="wifi">
+    <div class="brand-image-container">
+      <img class="brand-image" src="img/facebook.jpg" alt="facebook">
+      <img class="brand-image" src="img/twitter.jpg" alt="twitter">
+      <img class="brand-image" src="img/google-plus.jpg" alt="google-plus">
+      <img class="brand-image" src="img/pinterest.jpg" alt="pinterest">
+      <img class="brand-image" src="img/instagram.jpg" alt="instagram">
+      <img class="brand-image" src="img/stumbleupon.jpg" alt="stumbleupon">
+      <img class="brand-image" src="img/wifi.jpg" alt="wifi">
+    </div>
   </div>
 </section>
 
+<section class="features-container" id="features-container">
+  <div class="features-content-container">
+    <div class="tabs-container">
+      <a class="features-tab-orange" id="firstTab" onclick="switchFirstTab()">tab 1</a>
+      <a class="features-tab" id="secondTab" onclick="switchSecondTab()">tab 2</a>
+      <a class="features-tab" id="thirdTab" onclick="switchThirdTab()">tab 3</a>
+    </div>
+
+    <div class="feature-active-container" id="firstFeatureTab">
+      <div class="features-info-container">
+        <div class="features-title-container">
+          <h2 class="features-section_title">Tabs with soft transitioning effect.</h2>
+          <p class="features-section_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+            penatibus et magnis dis parturient montes.
+          </p>
+          <p class="features-section_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+            bibendum laoreet.</p>
+
+          <a class="features-section_download-button">
+            Download
+          </a>
+        </div>
+      </div>
+
+      <img class="features-image" src="img/features-image.png" alt="features">
+    </div>
+
+    <div class="feature-unactive-container" id="secondFeatureTab">
+      <div class="features-info-container">
+        <div class="features-title-container">
+          <h2 class="features-section_title">Tabs with soft transitioning effect.</h2>
+          <p class="features-section_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+            penatibus et magnis dis parturient montes.
+          </p>
+          <p class="features-section_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+            bibendum laoreet.</p>
+
+          <a class="features-section_download-button">
+            Download
+          </a>
+        </div>
+      </div>
+
+      <img class="features-image" src="img/features-image.png" alt="features">
+    </div>
+
+    <div class="feature-unactive-container" id="thirdFeatureTab">
+      <div class="features-info-container">
+        <div class="features-title-container">
+          <h2 class="features-section_title">Tabs with soft transitioning effect.</h2>
+          <p class="features-section_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+            penatibus et magnis dis parturient montes.
+          </p>
+          <p class="features-section_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+            bibendum laoreet.</p>
+
+          <a class="features-section_download-button">
+            Download
+          </a>
+        </div>
+      </div>
+
+      <img class="features-image" src="img/features-image.png" alt="features">
+    </div>
+  </div>
+</section>
+
+<section class="second-features-container" id="second-features-container">
+  <div class="second-features-content-container">
+    <img class="second-features-image" src="img/second-features.jpg" alt="second-features">
+
+    <div class="second-features-information-container">
+      <h2 class="second-features_title">Sub list section</h2>
+      <p class="second-features_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+        euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+        accumsan et viverra justo commodo.</p>
+
+      <ul class="list-items-container">
+        <li class="item-container">
+
+          <img class="list-item_image" src="img/list-icon.png" alt="">
+
+          <div class="item-information">
+            <h3 class="list-item_title">Title</h3>
+            <p class="list-item_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Aenean euismod bibendum laoreet.</p>
+          </div>
+        </li>
+
+        <li class="item-container">
+
+          <img class="list-item_image" src="img/list-icon.png" alt="">
+
+          <div class="item-information">
+            <h3 class="list-item_title">Title</h3>
+            <p class="list-item_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Aenean euismod bibendum laoreet. Proin gravida dolor
+              sit amet lacus accumsan et viverra justo commodo.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="third-features-container" id="third-features-container">
+  <div class="third-features-content-container">
+    <div class="third-features-information-container">
+      <h2 class="third-features_title">Standard Picture Section</h2>
+      <p class="third-features_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+        euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+        et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+        natoque penatibus et magnis dis parturient montes.
+      </p>
+      <p class="third-features_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+        bibendum laoreet.</p>
+    </div>
+
+    <img class="third-features-image" src="img/third-features.jpg" alt="third-features">
+  </div>
+</section>
+
+<section class="process-container" id="process-container">
+  <div class="process-content-container">
+    <div class="process-title-container">
+      <h2 class="process-title">WHY THIS IS AWESOME</h2>
+      <p class="process-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <ul class="process-items-container">
+      <li class="process-item">
+        <img class="process-item_image" src="img/thoughtful-design.png" alt="thoughtful-design">
+        <h3 class="process-item_title">Thoughtful Design</h3>
+        <p class="process-item_note">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Aenean euismod bibendum laoreet. Proin gravida
+          dolor sit amet lacus accumsan et viverra.
+        </p>
+      </li>
+
+      <li class="process-item">
+        <img class="process-item_image" src="img/well-crafted.png" alt="well-crafted">
+        <h3 class="process-item_title">Well Crafted</h3>
+        <p class="process-item_note">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Aenean euismod bibendum laoreet. Proin gravida
+          dolor sit amet lacus accumsan et viverra.
+        </p>
+      </li>
+
+      <li class="process-item">
+        <img class="process-item_image" src="img/easy-customize.png" alt="easy-to-customize">
+        <h3 class="process-item_title">Easy to Customize</h3>
+        <p class="process-item_note">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Aenean euismod bibendum laoreet. Proin gravida
+          dolor sit amet lacus accumsan et viverra.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="pricing-container" id="pricing-container">
+  <div class="pricing-content-container">
+    <div class="pricing-title-container">
+      <h2 class="pricing-title">Pricing options</h2>
+      <p class="pricing-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="pricing-slots-container">
+      <div class="basic-slot">
+        <div class="tariffs-block-title">Basic</div>
+        <div class="tariffs-block-price"><span class="tariff-currency">$</span>0</div>
+        <div class="tariffs-block-payment"><span class="payment-inscription">Free for Life</span></div>
+        <div class="orange-block"></div>
+        <div class="price-description">1 gb of space</div>
+        <div class="price-description">10 gb of bandwidth</div>
+        <div class="price-description">3 websites</div>
+        <div class="price-description">Basic Customization</div>
+        <div class="price-description">wordpress integration</div>
+        <div class="price-description">email support</div>
+      </div>
+
+      <div class="professional-slot">
+        <div class="tariffs-block-title">Professional</div>
+        <div class="tariffs-block-price"><span class="tariff-currency">$</span>19</div>
+        <div class="tariffs-block-payment"><span class="payment-inscription">Monthly Payment</span></div>
+        <div class="tariff-popular-inscription">Out most popular</div>
+        <div class="price-description">5 gb of space</div>
+        <div class="price-description">50 gb of bandwidth</div>
+        <div class="price-description">12 websites</div>
+        <div class="price-description">Advanced Customization</div>
+        <div class="price-description">wordpress integration</div>
+        <div class="price-description">email support</div>
+      </div>
+
+      <div class="basic-slot">
+        <div class="tariffs-block-title">Enterprise</div>
+        <div class="tariffs-block-price"><span class="tariff-currency">$</span>70</div>
+        <div class="tariffs-block-payment"><span class="payment-inscription">Monthly Payment</span></div>
+        <div class="orange-block"></div>
+        <div class="price-description">Unlimited space</div>
+        <div class="price-description">unlimited bandwidth</div>
+        <div class="price-description">100 websites</div>
+        <div class="price-description">Advanced Customization</div>
+        <div class="price-description">wordpress integration</div>
+        <div class="price-description">24/7 customer support</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-container" id="testimonial-container">
+  <div class="testimonial-content-container">
+    <div class="testimonial-title-container">
+      <h2 class="testimonial-title">What our customers are saying</h2>
+      <p class="testimonial-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="reviews-container">
+
+      <img class="left-arrow" src="img/left-arrow.png" alt="left-arrow" data-prev>
+
+      <ul class="review-elements">
+        <li class="element">
+          <div class="review">
+        <span class="review-text">Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Doloribus
+            accusamus expedita repellat similique
+            odio aspernatur ex, architecto eaque
+            quo suscipit.
+          </span>
+          </div>
+
+          <div class="reviewer-container">
+            <img class="reviewer-image" src="img/review-image.jpg" alt="review-image">
+
+            <div class="reviewer-name-container">
+              <h3 class="reviewer-name">Jeremy H.</h3>
+              <p class="reviewer-position">Manager</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="element">
+          <div class="review">
+        <span class="review-text">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Doloribus
+        accusamus expedita repellat similique
+        odio aspernatur ex, architecto eaque
+        quo suscipit.</span>
+          </div>
+
+          <div class="reviewer-container">
+            <img class="reviewer-image" src="img/review-image.jpg" alt="review-image">
+
+            <div class="reviewer-name-container">
+              <h3 class="reviewer-name">John S.</h3>
+              <p class="reviewer-position">Freelancer</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="element">
+          <div class="review">
+        <span class="review-text">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Doloribus
+        accusamus expedita repellat similique
+        odio aspernatur ex, architecto eaque
+        quo suscipit.</span>
+          </div>
+
+          <div class="reviewer-container">
+            <img class="reviewer-image" src="img/review-image.jpg" alt="review-image">
+
+            <div class="reviewer-name-container">
+              <h3 class="reviewer-name">Susan W.</h3>
+              <p class="reviewer-position">Photographer</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <img class="right-arrow" src="img/right-arrow.png" alt="right-arrow" data-next>
+    </div>
+
+    <div class="reviews-container-test">
+
+      <img class="left-arrow" src="img/left-arrow.png" alt="left-arrow" data-prev>
+
+      <ul class="review-elements">
+        <li class="element">
+          <div class="review">
+        <span class="review-text">Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Doloribus
+            accusamus expedita repellat similique
+            odio aspernatur ex, architecto eaque
+            quo suscipit.
+          </span>
+          </div>
+
+          <div class="reviewer-container">
+            <img class="reviewer-image" src="img/review-image.jpg" alt="review-image">
+
+            <div class="reviewer-name-container">
+              <h3 class="reviewer-name">Jeremy H.</h3>
+              <p class="reviewer-position">Manager</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="element">
+          <div class="review">
+        <span class="review-text">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Doloribus
+        accusamus expedita repellat similique
+        odio aspernatur ex, architecto eaque
+        quo suscipit.</span>
+          </div>
+
+          <div class="reviewer-container">
+            <img class="reviewer-image" src="img/review-image.jpg" alt="review-image">
+
+            <div class="reviewer-name-container">
+              <h3 class="reviewer-name">John S.</h3>
+              <p class="reviewer-position">Freelancer</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="element">
+          <div class="review">
+        <span class="review-text">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Doloribus
+        accusamus expedita repellat similique
+        odio aspernatur ex, architecto eaque
+        quo suscipit.</span>
+          </div>
+
+          <div class="reviewer-container">
+            <img class="reviewer-image" src="img/review-image.jpg" alt="review-image">
+
+            <div class="reviewer-name-container">
+              <h3 class="reviewer-name">Susan W.</h3>
+              <p class="reviewer-position">Photographer</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <img class="right-arrow" src="img/right-arrow.png" alt="right-arrow" data-next>
+    </div>
+  </div>
+</section>
+
+<section class="axure-design-container" id="axure-design-container">
+  <div class="axure-design-title-container">
+    <h2 class="axure-design-title">Stylish Axure Design</h2>
+    <p class="axure-design-note">
+      Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
+    </p>
+  </div>
+
+  <a class="axure-design-download-button">Download</a>
+</section>
+
+<section class="contact-us-section" id="contact-us-section">
+  <div class="contact-us-title-container">
+    <h2 class="contact-us-title">Contact us</h2>
+    <p class="contact-us-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+
+  <div class="contact-us-input-information-container">
+    <div class="contact-us-inputs-container">
+      <label class="contact-us-input-label">
+        <input class="contact-us-input" type="text" placeholder="Name">
+      </label>
+
+      <label class="contact-us-input-label">
+        <input class="contact-us-input" type="text" placeholder="Email">
+      </label>
+
+      <label class="contact-us-input-label">
+        <input class="contact-us-input" type="text" placeholder="Subject">
+      </label>
+    </div>
+
+    <label class="contact-us-textarea-label">
+      <textarea class="contact-us-textarea" name="Message" cols="30" rows="7" placeholder="Message"></textarea>
+    </label>
+  </div>
+
+  <a class="send-message-button">
+    Send Message
+  </a>
+</section>
+
+<footer class="footer-container" id="footer-container">
+  <div class="footer-images-container">
+    <img class="footer-image" src="img/facebook.png" alt="facebook">
+    <img class="footer-image" src="img/twitter.png" alt="twitter">
+    <img class="footer-image" src="img/google-plus.png" alt="google-plus">
+    <img class="footer-image" src="img/pinterest.png" alt="pinterest">
+    <img class="footer-image" src="img/instagram.png" alt="instagram">
+    <img class="footer-image" src="img/stumbleupon.png" alt="stumbleupon">
+    <img class="footer-image" src="img/wifi.png" alt="wifi">
+  </div>
+
+  <p class="footer-inscription">© 2016 PitchBook</p>
+</footer>
+
 <script src="js/adaptive-menu.js"></script>
+<script src="js/tab-switch.js"></script>
+<script src="js/carousel.js"></script>
 </body>
 </html>
