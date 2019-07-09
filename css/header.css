@@ -153,8 +153,9 @@
   padding: 17px;
   text-align: center;
 }
-.trial-inscription span {
+.trial-inscription .trial-inscription-word-free {
   color: #ff8b38;
+  text-transform: uppercase;
 }
 .get-started_button {
   background-color: #ff8b38;
@@ -285,6 +286,7 @@
     padding-top: 20px;
     padding-right: 5px;
     padding-left: 5px;
+    list-style: none;
   }
   .submenu .submenu-content-container .link {
     cursor: pointer;
@@ -293,6 +295,7 @@
     font-size: 14px;
     font-family: "Open Sans - Semibold", sans-serif;
     font-weight: 400;
+    text-decoration: none;
   }
   .header-section-container {
     flex-direction: row;
