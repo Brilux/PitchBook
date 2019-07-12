@@ -60,6 +60,9 @@
   opacity: 0.69;
   outline: none;
 }
+::-webkit-input-placeholder {
+  padding: 0 15px;
+}
 .contact-us-textarea-label {
   padding-top: 20px;
 }
