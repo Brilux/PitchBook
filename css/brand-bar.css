@@ -4,7 +4,7 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.38);
   margin-bottom: 2px;
 }
-.brand-content-container {
+.brand-container .brand-content-container {
   display: flex;
   margin: auto;
   justify-content: space-between;
@@ -12,20 +12,20 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.brand-info-container {
+.brand-container .brand-content-container .brand-info-container {
   padding-top: 10px;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 10px;
 }
-.brand-section_title {
+.brand-container .brand-content-container .brand-info-container .brand-section_title {
   margin-bottom: initial;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
-.brand-section_note {
+.brand-container .brand-content-container .brand-info-container .brand-section_note {
   padding-top: 12px;
   text-align: center;
   color: #86878b;
@@ -34,7 +34,7 @@
   font-weight: 400;
   line-height: 20px;
 }
-.brand-image-container {
+.brand-container .brand-content-container .brand-image-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -42,11 +42,11 @@
   padding-left: 5px;
   padding-right: 5px;
 }
-.brand-image {
+.brand-container .brand-content-container .brand-image-container .brand-image {
   cursor: pointer;
   list-style: none;
 }
-.brand-image:hover {
+.brand-container .brand-content-container .brand-image-container .brand-image:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -58,7 +58,7 @@
     padding-top: 22px;
     padding-bottom: 22px;
   }
-  .brand-content-container {
+  .brand-container .brand-content-container {
     width: 1105px;
     flex-direction: row;
     justify-content: space-around;
@@ -66,45 +66,45 @@
     padding-bottom: initial;
     padding-left: 20px;
   }
-  .brand-info-container {
+  .brand-container .brand-content-container .brand-info-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
   }
-  .brand-section_title {
+  .brand-container .brand-content-container .brand-info-container .brand-section_title {
     text-align: left;
   }
-  .brand-section_note {
+  .brand-container .brand-content-container .brand-info-container .brand-section_note {
     text-align: left;
   }
-  .brand-image-container {
+  .brand-container .brand-content-container .brand-image-container {
     padding-left: initial;
     padding-right: initial;
   }
-  .brand-image {
+  .brand-container .brand-content-container .brand-image-container .brand-image {
     padding-left: 20px;
   }
 }
 @media screen and (min-width: 992px) {
-  .brand-content-container {
-    padding-left: initial;
-  }
-  .brand-section_note {
-    max-width: 360px;
-  }
   .brand-container {
     justify-content: space-between;
+  }
+  .brand-container .brand-content-container {
+    padding-left: initial;
+  }
+  .brand-container .brand-content-container .brand-info-container .brand-section_note {
+    max-width: 360px;
   }
 }
 @media screen and (min-width: 1224px) {
   .brand-container {
     justify-content: space-between;
   }
-  .brand-content-container {
+  .brand-container .brand-content-container {
     justify-content: space-between;
   }
-  .brand-image {
+  .brand-container .brand-content-container .brand-image-container .brand-image {
     padding-left: 40px;
   }
 }
