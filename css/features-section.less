@@ -1,12 +1,13 @@
+@import "styles";
+@import "colors";
+
 .features-container {
-  background-color: #f5f5f5;
-  display: flex;
-  flex-direction: column;
+  background-color: @section-background;
+  .d-flex-flex-d-column;
   align-items: center;
 
   .features-content-container {
-    display: flex;
-    flex-direction: column;
+    .d-flex-flex-d-column;
 
     .tabs-container {
       padding-top: 30px;
@@ -16,13 +17,13 @@
       .features-tab.orange {
         padding: 30px;
         margin: 1px;
-        color: #ffffff;
+        color: @white-color;
         font-family: "Open Sans", sans-serif;
         font-weight: 700;
         font-size: 15px;
         line-height: 20px;
         text-transform: uppercase;
-        background-color: #ff8b38;
+        background-color: @bright-element;
         list-style: none;
         cursor: pointer;
       }
@@ -30,27 +31,26 @@
       .features-tab {
         padding: 30px;
         margin: 1px;
-        color: #ffffff;
+        color: @white-color;
         font-family: "Open Sans", sans-serif;
         font-weight: 700;
         font-size: 15px;
         line-height: 20px;
         text-transform: uppercase;
-        background-color: #37495e;
+        background-color: @dark-element;
         list-style: none;
         cursor: pointer;
-      }
 
-      .features-tab:hover {
-        background-color: #ff8b38;
+        &:hover {
+          background-color: @bright-element;
+        }
       }
     }
 
     .feature-container.active {
-      display: flex;
+      .d-flex-flex-d-column;
       justify-content: space-between;
       align-items: center;
-      flex-direction: column;
     }
 
     .feature-container {
@@ -58,13 +58,11 @@
     }
 
     .features-info-container {
-      display: flex;
-      flex-direction: column;
+      .d-flex-flex-d-column;
       align-items: center;
 
       .features-title-container {
-        display: flex;
-        flex-direction: column;
+        .d-flex-flex-d-column;
 
         .features-section_title {
           text-align: center;
@@ -86,8 +84,8 @@
         }
 
         .features-section_download-button {
-          color: #ffffff;
-          background-color: #ff8b38;
+          color: @white-color;
+          background-color: @bright-element;
           outline: none;
           padding-top: 15px;
           padding-bottom: 14px;
@@ -99,10 +97,10 @@
           font-weight: 400;
           margin: 15px auto;
           cursor: pointer;
-        }
 
-        .features-section_download-button:hover {
-          background-color: #37495e;
+          &:hover {
+            background-color: @dark-element;
+          }
         }
       }
     }

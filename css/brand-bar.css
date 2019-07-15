@@ -1,3 +1,7 @@
+.d-flex-flex-d-column {
+  display: flex;
+  flex-direction: column;
+}
 .brand-container {
   display: flex;
   flex-direction: column;
@@ -6,9 +10,9 @@
 }
 .brand-container .brand-content-container {
   display: flex;
+  flex-direction: column;
   margin: auto;
   justify-content: space-between;
-  flex-direction: column;
   padding-top: 20px;
   padding-bottom: 20px;
 }
