@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
 }
-.features-tab-orange {
+.features-tab.orange {
   padding: 30px;
   margin: 1px;
   color: #ffffff;
@@ -40,13 +40,13 @@
 .features-tab:hover {
   background-color: #ff8b38;
 }
-.feature-active-container {
+.feature-container.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
-.feature-unactive-container {
+.feature-container {
   display: none;
 }
 .features-info-container {
@@ -114,7 +114,7 @@
     flex-direction: column;
     margin: 10px;
   }
-  .features-tab-orange {
+  .features-tab.orange {
     padding: initial;
     width: 112px;
     height: 112px;
@@ -122,7 +122,7 @@
     align-items: center;
     justify-content: center;
   }
-  .feature-active-container {
+  .feature-container.active {
     flex-direction: row;
   }
   .features-tab {

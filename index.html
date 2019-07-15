@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="css/axure-design-section.css">
   <link rel="stylesheet" type="text/css" href="css/contact-us-section.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <section class="header-container" id="header-container">
@@ -155,13 +156,13 @@
 
 <section class="features-container" id="features-container">
   <div class="features-content-container">
-    <div class="tabs-container">
-      <a class="features-tab-orange" id="firstTab" onclick="switchFirstTab()">tab 1</a>
-      <a class="features-tab" id="secondTab" onclick="switchSecondTab()">tab 2</a>
-      <a class="features-tab" id="thirdTab" onclick="switchThirdTab()">tab 3</a>
-    </div>
+    <ul class="tabs-container">
+      <li class="features-tab orange">tab 1</li>
+      <li class="features-tab">tab 2</li>
+      <li class="features-tab">tab 3</li>
+    </ul>
 
-    <div class="feature-active-container" id="firstFeatureTab">
+    <div class="feature-container active">
       <div class="features-info-container">
         <div class="features-title-container">
           <h2 class="features-section_title">Tabs with soft transitioning effect.</h2>
@@ -182,7 +183,7 @@
       <img class="features-image" src="img/features-image.png" alt="features">
     </div>
 
-    <div class="feature-unactive-container" id="secondFeatureTab">
+    <div class="feature-container">
       <div class="features-info-container">
         <div class="features-title-container">
           <h2 class="features-section_title">Tabs 2 with soft transitioning effect.</h2>
@@ -203,7 +204,7 @@
       <img class="features-image" src="img/features-image.png" alt="features">
     </div>
 
-    <div class="feature-unactive-container" id="thirdFeatureTab">
+    <div class="feature-container">
       <div class="features-info-container">
         <div class="features-title-container">
           <h2 class="features-section_title">Tabs 3 with soft transitioning effect.</h2>
