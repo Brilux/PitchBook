@@ -1,3 +1,7 @@
+.d-flex-flex-d-column {
+  display: flex;
+  flex-direction: column;
+}
 @font-face {
   font-family: Raleway-Regular;
   src: url("../fonts/Raleway/Raleway-Regular.ttf");
@@ -264,9 +268,9 @@
     align-items: center;
   }
   .nav-container .nav-content-container .submenu .submenu-content-container .links {
-    padding: initial;
     display: flex;
     flex-direction: column;
+    padding: initial;
     justify-content: space-between;
     height: 87px;
     padding-top: 20px;
